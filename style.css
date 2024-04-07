@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+
+.background{
+	background-image: url(".v");
+	width: 100%;
+	height: 100vh;
+	background-position: center left;
+}
+
+.login{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form{
+	width: 400px;
+	padding: 20px;
+	background: transparent;
+	text-align: center;
+	padding-left:60px;
+	padding-right: 60px;
+	margin-top: 50px;
+	border-radius: 10px;
+	z-index: 999;
+	opacity: 0.91;
+	box-shadow: 0px 0px 7px 0px #45bbb1;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgb(36, 195, 223);
+}
+
+input{
+	outline: none;
+	border:none;
+	width: 100%;
+	font-size: 16px;
+	padding: 10px 10px;
+	border: 2px solid rgb(16, 201, 225);
+	
+	
+		box-shadow: 0px 0px 5px rgb(28, 204, 210),
+		0px 0px 30px rgb(28, 204, 210),
+		0px 0px 90px rgb(28, 204, 210);border-radius: 8px;
+}
+
+h1{
+	padding-bottom: 40px;
+	color: rgb(28, 204, 210);
+}
+
+input::placeholder{
+	color: rgb(8, 8, 8);
+	font-size: 16px;
+}
+
+button{
+    font-style: normal;
+	width: 120px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #55fe21;
+    color: rgb(255, 249, 249);
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px #55fe21,
+    0px 0px 30px #55fe21,
+    0px 0px 90px #55fe21;
+}
+
+@media(max-width: 600px) {
+  
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.background{
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+.login-form{
+	width: 90%;
+	padding: 10%;
+	background: rgb(213, 201, 201);
+	text-align: center;
+	padding-left:10%;
+	padding-right: 10%;
+	margin-top: 70px;
+	border-radius: 10px;
+
+}
+}
